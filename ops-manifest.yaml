@@ -1,0 +1,27 @@
+schemaVersion: rbs.ops/v1
+
+project:
+  id: replace-me
+  name: Replace Me
+
+service:
+  id: replace-me
+  name: Replace Me
+  versionSource: application
+
+environment:
+  id: development
+
+endpoints:
+  basePath: /internal/ops/v1
+
+capabilities:
+  health: true
+  dependencies: false
+  deployment: false
+
+freshness:
+  healthSeconds: 60
+
+# Do not place credentials, tokens, passwords, connection strings or customer data here.
+# Add only non-secret operational discovery metadata supported by the current RBS contract.
